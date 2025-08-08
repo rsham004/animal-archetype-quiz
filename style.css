@@ -1,3 +1,4 @@
+/* Version 2.1 - Cache bust for button fixes */
 * {
     margin: 0;
     padding: 0;
@@ -109,30 +110,30 @@ header p {
     align-items: center;
 }
 
-button {
-    background: #4c51bf;
-    color: #ffffff;
-    border: 2px solid #4c51bf;
+button, .navigation button, #restart-btn {
+    background: #4c51bf !important;
+    color: #ffffff !important;
+    border: 2px solid #4c51bf !important;
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 1em !important;
+    font-weight: 600 !important;
     transition: all 0.2s ease;
-    text-shadow: none;
+    text-shadow: none !important;
 }
 
-button:hover:not(:disabled) {
-    background: #553c9a;
-    border-color: #553c9a;
+button:hover:not(:disabled), .navigation button:hover:not(:disabled), #restart-btn:hover:not(:disabled) {
+    background: #553c9a !important;
+    border-color: #553c9a !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(76, 81, 191, 0.3);
 }
 
-button:disabled {
-    background: #a0aec0;
-    border-color: #a0aec0;
-    color: #ffffff;
+button:disabled, .navigation button:disabled, #restart-btn:disabled {
+    background: #a0aec0 !important;
+    border-color: #a0aec0 !important;
+    color: #ffffff !important;
     cursor: not-allowed;
     transform: none;
 }
