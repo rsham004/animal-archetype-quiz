@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Archetype Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐾 Animal Behavior Archetype Quiz</h1>
+            <p>Discover which protective mechanism guides your behavior</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-section">
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+            
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="answers-container"></div>
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn" disabled>Next</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-section" style="display: none;">
+            <h2>Your Animal Archetype</h2>
+            <div id="archetype-result">
+                <div class="archetype-icon"></div>
+                <h3 id="archetype-name"></h3>
+                <p id="archetype-description"></p>
+            </div>
+            
+            <div class="detailed-results">
+                <div class="result-section">
+                    <h4>Characteristics</h4>
+                    <p id="characteristics"></p>
+                </div>
+                
+                <div class="result-section">
+                    <h4>Childhood Origins</h4>
+                    <p id="childhood-origins"></p>
+                </div>
+                
+                <div class="result-section">
+                    <h4>Core Needs</h4>
+                    <p id="core-needs"></p>
+                </div>
+                
+                <div class="result-section">
+                    <h4>Associated Neurotransmitter</h4>
+                    <p id="neurotransmitter"></p>
+                </div>
+            </div>
+            
+            <button id="restart-btn">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
